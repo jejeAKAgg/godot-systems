@@ -1,20 +1,30 @@
-.venv
+# --- Development Environment ---
 .venv/
+env/
+.vscode/
+.idea/
 
-# Godot 4+ specific ignores
+# --- Godot Engine ---
 .godot/
-.nomedia
-
-# Godot-specific ignores
 .import/
+.mono/
+.nomedia
 export.cfg
 export_credentials.cfg
 *.tmp
-
-# Imported translations (automatically generated from CSV files)
 *.translation
-
-# Mono-specific ignores
-.mono/
 data_*/
 mono_crash.*.json
+
+# --- Build Artifacts (Binaries & Libraries) ---
+bin/*
+!bin/.keep
+*.dll
+*.so
+*.exp
+*.lib
+*.pdb
+
+# --- SCons Build System ---
+.sconsign.dblite
+.sconf_temp/
