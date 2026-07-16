@@ -1,0 +1,20 @@
+[configuration]
+
+entry_symbol = "project_init"
+compatibility_minimum = "4.7"
+reloadable = true
+
+[libraries]
+
+macos.debug = "./libgdSystems.macos.template_debug.dylib"
+macos.release = "./libgdSystems.macos.template_release.dylib"
+windows.debug.x86_32 = "./gdSystems.windows.template_debug.x86_32.dll"
+windows.release.x86_32 = "./gdSystems.windows.template_release.x86_32.dll"
+windows.debug.x86_64 = "./gdSystems.windows.template_debug.x86_64.dll"
+windows.release.x86_64 = "./gdSystems.windows.template_release.x86_64.dll"
+linux.debug.x86_64 = "./libgdSystems.linux.template_debug.x86_64.so"
+linux.release.x86_64 = "./libgdSystems.linux.template_release.x86_64.so"
+linux.debug.arm64 = "./libgdSystems.linux.template_debug.arm64.so"
+linux.release.arm64 = "./libgdSystems.linux.template_release.arm64.so"
+linux.debug.rv64 = "./libgdSystems.linux.template_debug.rv64.so"
+linux.release.rv64 = "./libgdSystems.linux.template_release.rv64.so"
