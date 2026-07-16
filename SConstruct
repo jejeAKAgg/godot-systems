@@ -29,4 +29,4 @@ library = env.SharedLibrary(
 )
 
 # Selects the shared library as the default target.
-Default(library)
+Default(library) # type: ignore
